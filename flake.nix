@@ -36,8 +36,8 @@
           sourceRoot = "Kiro";
 
           src = pkgs.fetchurl {
-            url = "https://prod.download.desktop.kiro.dev/releases/202507152342--distro-linux-x64-tar-gz/202507152342-distro-linux-x64.tar.gz";
-            sha256 = "787acdc09184096c8eb82dfe0235d2bd516dadc3505efde6cf3d7a51041ee5b2";
+            url = "https://prod.download.desktop.kiro.dev/releases/202507232027--distro-linux-x64-tar-gz/202507232027-distro-linux-x64.tar.gz";
+            sha256 = "sha256-XxtJS7hLUKHJG0HhiA2Fyt7wNh5YebOOYadvNvXCKzc=";
           };
 
           tests = {};
