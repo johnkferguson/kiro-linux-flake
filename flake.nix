@@ -24,7 +24,7 @@
       then {
         packages.default = pkgs.callPackage "${pkgs.path}/pkgs/applications/editors/vscode/generic.nix" rec {
           pname = "kiro";
-          version = "202507152342";
+          version = "202508020245";
 
           executableName = "kiro";
           longName = "Kiro";
@@ -36,8 +36,8 @@
           sourceRoot = "Kiro";
 
           src = pkgs.fetchurl {
-            url = "https://prod.download.desktop.kiro.dev/releases/202507232027--distro-linux-x64-tar-gz/202507232027-distro-linux-x64.tar.gz";
-            sha256 = "sha256-XxtJS7hLUKHJG0HhiA2Fyt7wNh5YebOOYadvNvXCKzc=";
+            url = "https://prod.download.desktop.kiro.dev/releases/202508020245--distro-linux-x64-tar-gz/202508020245-distro-linux-x64.tar.gz";
+            sha256 = "sha256-2kUx4PEqVcLF2/gk1+bxjeVrfX6wOxfRpLeMevNNsR8=";
           };
 
           tests = {};
