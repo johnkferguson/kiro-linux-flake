@@ -22,9 +22,9 @@
     in
       if supportedSystem
       then {
-        packages.default = pkgs.callPackage "${pkgs.path}/pkgs/applications/editors/vscode/generic.nix" rec {
+        packages.default = pkgs.callPackage "${pkgs.path}/pkgs/applications/editors/vscode/generic.nix" {
           pname = "kiro";
-          version = "202508020245";
+          version = "202508150626";
 
           executableName = "kiro";
           longName = "Kiro";
@@ -36,8 +36,8 @@
           sourceRoot = "Kiro";
 
           src = pkgs.fetchurl {
-            url = "https://prod.download.desktop.kiro.dev/releases/202508020245--distro-linux-x64-tar-gz/202508020245-distro-linux-x64.tar.gz";
-            sha256 = "sha256-2kUx4PEqVcLF2/gk1+bxjeVrfX6wOxfRpLeMevNNsR8=";
+            url = "https://prod.download.desktop.kiro.dev/releases/202508150626--distro-linux-x64-tar-gz/202508150626-distro-linux-x64.tar.gz";
+            sha256 = "sha256-ORgN7gOyHGkO/ewqy62H0oNweZz7ViUAuEtXM1WgYIE=";
           };
 
           tests = {};
