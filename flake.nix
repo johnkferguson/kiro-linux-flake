@@ -24,7 +24,11 @@
       then {
         packages.default = pkgs.callPackage "${pkgs.path}/pkgs/applications/editors/vscode/generic.nix" {
           pname = "kiro";
-          version = "202508150626";
+          version = "202509032213";
+          src = pkgs.fetchurl {
+            url = "https://prod.download.desktop.kiro.dev/releases/202509032213--distro-linux-x64-tar-gz/202509032213-distro-linux-x64.tar.gz";
+            sha256 = "sha256-nqOtD7Ef7dLYHzAM2jTybV/paUPjPYBJpa2AM0lnyIE=";
+          };
 
           executableName = "kiro";
           longName = "Kiro";
@@ -34,11 +38,6 @@
           commandLineArgs = "";
 
           sourceRoot = "Kiro";
-
-          src = pkgs.fetchurl {
-            url = "https://prod.download.desktop.kiro.dev/releases/202508150626--distro-linux-x64-tar-gz/202508150626-distro-linux-x64.tar.gz";
-            sha256 = "sha256-ORgN7gOyHGkO/ewqy62H0oNweZz7ViUAuEtXM1WgYIE=";
-          };
 
           tests = {};
           updateScript = null;
